@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Tianrui (Rey) - 个人主页</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .language-switcher {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+        }
+        .language-switcher a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 80px auto 50px auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+            padding: 60px 50px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #eee;
+            margin-bottom: 25px;
+            transition: transform 0.3s;
+        }
+        .profile-pic:hover {
+            transform: scale(1.08);
+        }
+        h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 20px;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        .contact a, .resume a {
+            display: inline-block;
+            margin: 10px 15px;
+            padding: 12px 30px;
+            border-radius: 30px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .contact a:hover, .resume a:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+        }
+        .section {
+            margin-top: 60px;
+        }
+        .section h2 {
+            font-size: 32px;
+            border-left: 6px solid #007BFF;
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+        .skills span {
+            display: inline-block;
+            background: #007BFF;
+            color: white;
+            padding: 10px 25px;
+            margin: 8px;
+            border-radius: 20px;
+            font-size: 18px;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .project-card {
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-8px);
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 32px; }
+            p { font-size: 16px; }
+            .container { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="language-switcher">
+        <a href="#">中文</a> | <a href="#">English</a>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <img class="profile-pic" src="images/WechatIMG1249.jpg" alt="我的头像">
+            <h1>Ma Tianrui (Rey)</h1>
+            <p>科技、编程、逻辑、AI探索者</p>
+            <div class="contact">
+                <a href="mailto:reyfaust@example.com">邮箱联系</a>
+                <a href="#">LinkedIn（待上传）</a>
+                <a href="#">GitHub（待上传）</a>
+                <a href="tel:18226928315">微信: 18226928315</a>
+            </div>
+            <div class="resume">
+                <a href="#">下载简历（待上传）</a>
+                <a href="#">进入博客（预留空白）</a>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>关于我</h2>
+            <p>我是一名正在转型进入技术行业的学习者，专注于编程、逻辑思维、系统设计与跨学科知识整合。相信长期主义与结构性学习，致力于打造属于自己的知识图谱与技能体系。</p>
+        </div>
+
+        <div class="section">
+            <h2>技能展示</h2>
+            <div class="skills">
+                <span>Python</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>逻辑思维</span>
+                <span>项目管理</span>
+                <span>系统设计</span>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>项目作品集</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>个人知识管理系统</h3>
+                    <p>一个用于系统整理学习笔记与知识地图的项目，支持多标签、关联性与逻辑树结构。</p>
+                </div>
+                <div class="project-card">
+                    <h3>财务追踪应用</h3>
+                    <p>使用 Python 开发的个人财务收支记录系统，帮助管理每日收支与资产分布。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>职业目标与规划</h2>
+            <p>3年内系统掌握软件开发与AI能力，进入技术行业。</p>
+        </div>
+
+    </div>
+</body>
+</html>
